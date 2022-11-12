@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM&BOM</title>
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="#">ДОМ</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#">БЭМ</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#">Блок</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#">Элемент</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#">Модификатор</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="whatabout">
+        <div class="whatabout_title">Just a simple page <span>abo</span>ut DOM and BEM</div>
+        <div class="whatabout_descr">Здесь расположены основные понятия, такие как ДОМ и БЭМ, чтобы в любой момент можно было зайти и посмотреть всю нужную информацию и не приходилось серчить пол интернета)</div>
+        <div class="whatabout_carousel">***Здесь будет каруселька скриншотов :)***</div>
+    </section>
+
+    <section class="dom">
+        <div class="dom_descr">
+            <h1>What is "DOM"?</h1>
+        </div>
+        <div class="dom_subdescr">
+            <div class="dom_subdescr_background">
+                <div class="dom_subdescr_background_textborder">
+                    <p>- DOM – это объектное представление исходного HTML-кода документа. Процесс формирования DOM происходит так: браузер получает HTML-код, парсит его и строит DOM.</p>
+                    <p>- Затем, как мы уже отмечали выше браузер использует DOM (а не исходный HTML) для строительства дерева рендеринга, потом выполняет layout и так далее.</p>
+                    <p>- Почему не использовать в этом случае просто HTML? Потому что HTML – это текст, и с ним невозможно работать так как есть. Для этого нужно его разобрать и создать на его основе объект, что и делает браузер. И этим объектом является DOM.</p>
+                    <p>- Итак, DOM – это объектная модель документа, которую браузер создаёт в памяти компьютера на основании HTML-кода.</p>
+                    <p>- По-простому, HTML-код – это текст страницы, а DOM – это объект, созданный браузером при парсинге этого текста.</p>
+                </div>
+            </div>
+            <div class="dom_subdescr_build">
+                <h2>How is a "DOM" built?</h2>
+                <div class="dom_subdescr_build_code">
+                    <div class="dom_subdescr_build_code_textborder">
+                        <p>- Перед тем, как перейти к DOM, сначала вспомним, что собой представляет исходный HTML-код документа. В качестве примера рассмотрим следующий:</p>
+                        <div class="dom_subdescr_build_code_textborder_codeexample">
+                            <div class="dom_subdescr_build_code_textborder_codeexample_code">
+                                &lt;!doctype html&gt;<br>
+                                &lt;html lang="ru"&gt;<br>
+                                &lt;head&gt;<br>
+                                <span class="onetab">&lt;title&gtМоя страница&lt;/title&gt;;<br></span>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+                                <span class="onetab">&lt;h1&gt;Мобильные ОС&lt;/h1&gt;<br></span>
+                                <span class="onetab">&lt;ul&gt;<br></span>
+                                <span class="twotab">&lt;li&gt;Android&lt;/li&gt;<br></span>
+                                <span class="twotab">&lt;li&gt;iOS&lt;/li&gt;<br></span>
+                                <span class="onetab">&lt;/ul&gt;<br></span>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </div>
+                            <div class="dom_subdescr_build_code_textborder_codeexample_dom">
+                                Теперь рассмотрим, как браузер на основании HTML-кода строит DOM. Объектная структура DOM представляет собой дерево узлов (узел на английском называется node). При этом DOM-узлы образуются из всего, что есть в HTML: тегов, текстового контента, комментариев и т.д.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

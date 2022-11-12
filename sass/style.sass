@@ -1,0 +1,135 @@
+*
+    box-sizing: border-box
+body
+    margin: 0
+a
+    text-decoration: none
+a:hover
+    text-decoration: underline
+.navigation
+    display: block
+    position: fixed
+    height: 51px
+    width: 100%
+    background: url(../img/menuback.png) center center/cover no-repeat
+    transition: 1s ease-in-out
+    &:hover
+        background: url(../img/menubackhover.png) center center/cover no-repeat
+        transition-duration: 1s 
+        .menu
+            &_item
+                a
+                    color: black
+                &:nth-child(n+4)
+                    a
+                        color: white
+.menu
+    display: flex
+    justify-content: space-around
+    list-style-type: none
+    &_item
+        a
+            position: relative
+            text-decoration: none
+            color: white
+        &:nth-child(n+4)
+            a
+                color: black
+            a::before
+                background-color: white
+        a::before
+            content: ''
+            position: absolute
+            left: 0 
+            bottom: -5px
+            width: 0
+            height: 0.1px
+            background-color: black
+        a:hover:before
+            width: 100%
+        a::before
+            transition: width 1s
+    &_item
+        border-right: 2px dotted black
+        padding-right: 170px
+        &:last-child
+            border-right: none
+            color: white
+        
+.whatabout
+    padding-top: 100px
+    height: 812px
+    background: url(../img/oboi7.com-79934.png) center center/cover no-repeat
+    text-align: center
+    font-size: 78px
+    &_title
+        color: white
+        span
+            color: black
+    &_descr
+        margin: 0 auto
+        width: 75%
+        margin-top: 150px
+        font-size: 40px
+        color: white
+    &_carousel
+        margin-top: 150px
+        color: white
+        font-size: 10px
+
+.dom
+    margin: 0
+    h1
+        font-size: 90px
+    h2
+        font-size: 50px
+        padding-left: 190px
+    &_descr
+        padding-left: 160px
+    &_subdescr
+        color: #e5e5e5
+        &_background
+            background: url(../img/lampback2.png) center center/cover no-repeat
+            padding: 20px 600px 10px 250px
+            &_textborder
+                border-color: white
+                border-style: solid
+                padding-left: 10px
+                p
+                    font-size: 28px
+            div:nth-child(6)
+                padding-left: 240px
+        &_build
+            background-color: black
+            padding-top: 20px
+            h2
+                margin: 0
+            &_code
+                padding: 20px 600px 20px 250px
+                &_textborder
+                    border-color: white
+                    border-style: solid
+                    padding-left: 10px
+                    padding-bottom: 20px
+                    p
+                        font-size: 28px
+                    &_codeexample
+                        display: flex
+                        justify-content: space-between
+                        &_code
+                            width: 30%
+                            border-color: white
+                            border-style: solid
+                            padding: 5px 10px 0 10px
+                            font-size: 20px
+                            .onetab
+                                margin-left: 20px
+                            .twotab
+                                margin-left: 40px
+                        &_dom
+                            width: 60%
+
+    
+	
+	
+

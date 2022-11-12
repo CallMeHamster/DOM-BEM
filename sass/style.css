@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navigation {
+  display: block;
+  position: fixed;
+  height: 51px;
+  width: 100%;
+  background: url(../img/menuback.png) center center/cover no-repeat;
+  transition: 1s ease-in-out;
+}
+.navigation:hover {
+  background: url(../img/menubackhover.png) center center/cover no-repeat;
+  transition-duration: 1s;
+}
+.navigation:hover .menu_item a {
+  color: black;
+}
+.navigation:hover .menu_item:nth-child(n+4) a {
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.menu_item a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+.menu_item:nth-child(n+4) a {
+  color: black;
+}
+.menu_item:nth-child(n+4) a::before {
+  background-color: white;
+}
+.menu_item a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 0.1px;
+  background-color: black;
+}
+.menu_item a:hover:before {
+  width: 100%;
+}
+.menu_item a::before {
+  transition: width 1s;
+}
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 170px;
+}
+.menu_item:last-child {
+  border-right: none;
+  color: white;
+}
+
+.whatabout {
+  padding-top: 100px;
+  height: 812px;
+  background: url(../img/oboi7.com-79934.png) center center/cover no-repeat;
+  text-align: center;
+  font-size: 78px;
+}
+.whatabout_title {
+  color: white;
+}
+.whatabout_title span {
+  color: black;
+}
+.whatabout_descr {
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 150px;
+  font-size: 40px;
+  color: white;
+}
+.whatabout_carousel {
+  margin-top: 150px;
+  color: white;
+  font-size: 10px;
+}
+
+.dom {
+  margin: 0;
+}
+.dom h1 {
+  font-size: 90px;
+}
+.dom h2 {
+  font-size: 50px;
+  padding-left: 190px;
+}
+.dom_descr {
+  padding-left: 160px;
+}
+.dom_subdescr {
+  color: #e5e5e5;
+}
+.dom_subdescr_background {
+  background: url(../img/lampback2.png) center center/cover no-repeat;
+  padding: 20px 600px 10px 250px;
+}
+.dom_subdescr_background_textborder {
+  border-color: white;
+  border-style: solid;
+  padding-left: 10px;
+}
+.dom_subdescr_background_textborder p {
+  font-size: 28px;
+}
+.dom_subdescr_background div:nth-child(6) {
+  padding-left: 240px;
+}
+.dom_subdescr_build {
+  background-color: black;
+  padding-top: 20px;
+}
+.dom_subdescr_build h2 {
+  margin: 0;
+}
+.dom_subdescr_build_code {
+  padding: 20px 600px 20px 250px;
+}
+.dom_subdescr_build_code_textborder {
+  border-color: white;
+  border-style: solid;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+.dom_subdescr_build_code_textborder p {
+  font-size: 28px;
+}
+.dom_subdescr_build_code_textborder_codeexample {
+  display: flex;
+  justify-content: space-between;
+}
+.dom_subdescr_build_code_textborder_codeexample_code {
+  width: 30%;
+  border-color: white;
+  border-style: solid;
+  padding: 5px 10px 0 10px;
+  font-size: 20px;
+}
+.dom_subdescr_build_code_textborder_codeexample_code .onetab {
+  margin-left: 20px;
+}
+.dom_subdescr_build_code_textborder_codeexample_code .twotab {
+  margin-left: 40px;
+}
+.dom_subdescr_build_code_textborder_codeexample_dom {
+  width: 60%;
+}/*# sourceMappingURL=style.css.map */
